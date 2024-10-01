@@ -1,0 +1,152 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #0e2522;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed; /* Fix the nav at the top */
+    width: 100%; /* Ensure it stretches across the viewport */
+    top: 0; /* Position it at the top */
+    left: 0;
+    z-index: 1000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #00bcd4;
+}
+
+ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #00bcd4;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
+section { 
+    padding: 100px 0;
+    text-align: center;
+}
+h1, h2, h3 {
+    color: #f3ba2f;
+}
+
+p {
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* About Section */
+#about {
+    background-image: url('https://wallpaperaccess.com/full/4115908.jpg');
+    background-size:cover; /* Ensure the image covers the entire section */
+    background-position: center;
+    background-color: #f4f4f4;
+    margin-block: 80px;
+}
+
+
+
+button {
+    background-color: #f3ba2f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #393838;
+    color: #fff;
+}
+
+.btn-nav {
+    background: linear-gradient(45deg, #ffcc70, #ff7e00);
+
+    padding: 10px 30px;
+    /* background-color: #007bff; Blue background */
+    color: rgb(15, 16, 16);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    margin: 20px;
+}
+
+.btn-nav:hover {
+    background: linear-gradient(45deg, #007bff, #00d4ff);
+    transform: scale(1.05);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+    
+
+#Certificates {
+    background-image: url('https://i.pinimg.com/736x/8b/a3/ac/8ba3aced11a7edf5ba6185718f105c31.jpg');
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center;
+}
+#Certificates ul {
+    
+    list-style: none;
+    padding: 0; 
+}
+
+#Certificates ul li {
+    
+    background-color: #f4f4f4;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid #f3ba2f;
+}
+
+#Certificates p {
+ color: #f8f6f6;
+}
+
+.image-inline-block img {
+    display: inline-block;  /* Display images inline */
+    width: 48%;             /* Adjust width as needed */
+    height: auto;           /* Maintain aspect ratio */
+    vertical-align: top;    /* Align images properly */
+}
