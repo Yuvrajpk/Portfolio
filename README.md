@@ -57,10 +57,4 @@ Some ideas for future updates:
 - **[LinkedIn](https://www.linkedin.com/in/yuvraj-p-756522228/)**
 - **[Instagram](https://www.instagram.com/yuvraj._.prince/)**
 
-## 📄 License
 
-This project is licensed under the MIT License. You are free to use and modify it, but please give credit where it’s due.
-
----
-
-Feel free to modify the content based on any specific information you want to highlight in your portfolio.
