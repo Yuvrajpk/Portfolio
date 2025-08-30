@@ -1,0 +1,304 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color:#0e2522;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed; /* Fix the nav at the top */
+    width: 100%; /* Ensure it stretches across the viewport */
+    top: 0; /* Position it at the top */
+    left: 0;
+    z-index: 1000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #00bcd4;
+}
+
+ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #00bcd4;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
+section { 
+    padding: 100px 0;
+    text-align: center;
+}
+h1, h2, h3 {
+    color: #f3ba2f;
+}
+
+p {
+    color: #fff;
+    line-height: 1.6;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* .contact {
+    background-color: #f7f7f7;
+    background-image: url('https://png.pngtree.com/background/20210712/original/pngtree-blurred-bokeh-light-with-blue-and-gold-sparkle-on-dark-blue-picture-image_1183259.jpg');
+    padding: 50px 20px;
+    background-size: cover;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #f8faf7;
+}
+
+.contact p {
+    font-size: 1.2em;
+    color: #f1f1f0;
+    margin-bottom: 30px;
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+.btn-contact {
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    margin: 10px;
+    display: inline-block;
+}
+
+.btn-contact:hover {
+    background: linear-gradient(45deg, #007bff, #00d4ff);
+    transform: scale(1.05);
+} */
+.contact {
+    /* background: linear-gradient(135deg, #2b2fa5 0%, #6f74dd 50%, #8ea6f0 100%); */
+    background-image: url('https://img.freepik.com/free-vector/half-tone-blue-abstract-background-with-text-space_1017-41428.jpg');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    padding: 50px;
+    color: white;
+    text-align: center;
+    border-radius: 02px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #ffd60a;
+}
+
+.contact-text {
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.contact-number {
+/* background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */   
+    padding: 10px;
+    color: #f1e4cf;
+    border-radius: 8px;
+    font-size: 26px;
+}
+.whatsapp-container {
+    margin-top: 28px;
+}
+
+.whatsapp-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #4bc435;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-contact {
+     background: linear-gradient(45deg, #f12711, #f5af19); 
+   
+    border: none;
+    color: rgb(250, 247, 247);
+    padding: 12px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.btn-contact:hover {
+    background: linear-gradient(45deg, #007bff, #00d4ff);
+    transform: scale(1.05);
+    color: #0a0a0a;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+} 
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact h2 {
+        font-size: 2em;
+    }
+
+    .contact p {
+        font-size: 1em;
+    }
+
+    .btn-contact {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+}
+
+ .whatsapp-link {
+            font-size: 1.1rem;
+            color: #4bc435;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .whatsapp-link i {
+            margin-right: 10px;
+        }
+        .whatsapp-container {
+            text-align: center;
+        }
+
+        .whatsapp-link {
+            font-size: 1.5rem;
+            color: #15db18;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .whatsapp-link img {
+            width: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .whatsapp-link i {
+            margin-right: 10px;
+            font-size: 2rem;
+            color: #25D366;
+        }
+footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    margin-bottom: 20px;
+}
+
+.footer-content h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #1effd2; /* Highlight color for the heading */
+}
+
+.footer-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    color: #1e90ff; /* Change color on hover */
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a img {
+    width: 30px; /* Set icon size */
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}

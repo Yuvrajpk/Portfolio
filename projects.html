@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="projects.css" rel="stylesheet">
+    <style>
+        .btn-nav {
+            padding: 10px 30px;
+            background-color: #007bff; /* Blue background */
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            margin: 20px;
+        }
+        .btn-nav1 {
+            padding: 10px 30px;
+            background: linear-gradient(45deg, #ff6f20, #ffbd45);
+
+
+
+
+
+            color: rgb(11, 11, 11);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            margin: 20px;
+            
+        }
+        .btn-nav1:hover {
+            background: linear-gradient(45deg, #007bff, #00d4ff);
+            transform: scale(1.05);
+        }
+        .btn-nav:hover {
+            background: linear-gradient(45deg, #007bff, #00d4ff);
+            transform: scale(1.05);
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+           
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="certificates.html">Certificates</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="projects">
+        <div class="projects-content">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Mass Emailing using AWS Lambda</h3>
+                    <p>Mass emailing using AWS Lambda involves automating the sending of bulk emails efficiently by integrating AWS Lambda with Amazon Simple Email Service (SES) and CloudWatch.</p>
+                    <a href="page2.html">
+                        <button class="btn-nav">CheckOut Architecture Diagram...</button>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <h3>Building Image Labels Generator using Amazon Rekognition</h3>
+                    <p>Building an image labels generator using Amazon Rekognition involves automating the process of labeling images by leveraging Rekognition's machine learning capabilities to detect and classify objects within images.</p>
+                    <a href="page3.html">
+                        <button class="btn-nav">CheckOut Architecture Diagram...</button>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <h3>VelocityOps: CI/CD Pipeline for Microservices on AWS</h3>
+                    <p>Building a CI/CD pipeline for microservices on AWS using modern DevOps tools like Docker, Jenkins, Kubernetes, and Terraform.
+
+This project highlights how to achieve scalable, automated, and reliable cloud-native deployments by integrating infrastructure as code and container orchestration with continuous delivery pipelines.</p>
+                    <a href="page4.html">
+                        <button class="btn-nav">CheckOut Architecture Diagram...</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="btn-container">
+                <a href="certificates.html"><button class="btn-nav1"> ⮜ Previous</button></a>
+                <a href="resume.html"><button class="btn-nav1">Next ⮞</button></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
